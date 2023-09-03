@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Personal Portfolio</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" class="fas fa-bars"></label>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+        </nav>
+    </header>
+
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Sushma Sarkar</h1>
+            <h3>And I'm a <span id="element"></span></h3>
+            <span id="element"></span>
+            <p>
+                My toolbox includes proficiency in HTML, CSS, JavaScript, and front-end frameworks
+                like React. I also enjoy working on the back-end, leveraging technologies
+                like Node.js, Express, and databases such as MongoDB to bring dynamic functionality to my
+                projects. </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/sushma-sarkar-38b5111a0/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://twitter.com/SushmaSarkar123" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://t.me/sushma2004" target="_blank"><i class='bx bxl-telegram'></i></a>
+                <a href="https://bit.ly/Sushmasarkar26" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://bit.ly/SushmaSarkar2004" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/SushmaSarkar26" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+            <a href="" download class="btn">Download CV</a>
+            <a href="https://formsubmit.co/el/ripuro" target="_blank" class="btn">Hire Me</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/img1.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/img2.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2><br>
+            <h3>Full Stack Web Developer !</h3><br>
+            <p>
+                I am a 3rd year undergraduate student at
+            the University Institute of Technology (UIT), The University of Burdwan. I am persuing my Bachelor of Engineering degree in Electronics and Communication Engineering department.<br><br>
+            Enthusiastic Full stack web developer with a strong foundation in front-end and back-end technologies.  Passionate about creating dynamic and user-friendly web applications. 
+            Proficient in HTML, CSS, and JavaScript, with hands-on experience in using frameworks like React for the front end. Skilled in database management using MongoDB and building APIs with Node.js and Express.js on the back end. Excited to contribute creativity and technical skills to drive innovative solutions.
+            </p>
+
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            
+            <div class="tab-contents active-tab" id="skills">
+                <div>
+                    <ul>
+                        <li><span>LANGUAGES</span><br>C<br>C++<br>Java<br>Python<br>HTML<br>CSS<br>JavaScript</li><br>
+                        <li><span>TOOLS</span><br>Bash/ Shell<br>Git & Github<br>VSCode<br>Bootstrap<br>metarial UI</li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><span>FRAMWORKS</span><br>React.js<br>Node.js<br>MongoDB</li><br>
+                        <li><span>API</span><br>Express</li><br>
+                        <li><span>DESIGN</span><br>Canva<br>Kinemaster</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Web Development Intern at TechnoHacks EduTech</span><br>aug 2023 - present</li><br>
+                    <li><span>Web Development Intern at CodSoft</span><br>aug 2023 - present</li><br>
+                    <li><span>Summer Internship at Technophilia Solutions (IIT KHARAGPUR)</span><br>may 2023 - sep 2023 . 3 mos</li><br>
+                    <li><span>Web Development Intern at Acmegrade (IIT BOMBAY)</span><br>Nov 2022 - Dec 2022 . 2 mos</li><br>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Bachelor of Engineering</span><br>University Institute of Technology, Burdwan University<br>Dept- ECE<br>2021 - 2025</li><br>
+                    <li><span>Higher Secondary</span><br>Hanspukuria Vidyapith<br>2021</li><br>
+                    <li><span>Secondary</span><br>Hanspukuria Vidyapith<br>2019</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- services section design -->
+    <section class="services" id="services">
+    <div class="section services" id="service">
+        <h2 class="heading">My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Frontend Development</h3>
+                <p>Currently doing Development</p>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Backend Development</h3>
+                <p>Currently doing Development</p>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>UI/UX Design</h3>
+                <p>Currently doing Development</p>
+
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    
+
+    <!-- project section design -->
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="images/p1.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="images/p2.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/p7.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/p3.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/p5.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="images/p6.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web Design</h4>
+                    <p>under construction</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- footer section design -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Sushma Sarkar | All Rights Reserved.</p>
+
+
+        </div>
+    </footer>
+
+
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI/UX Designer', 'Video Editor'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+    <!-- about tabs setup -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+</body>
+
+</html>
